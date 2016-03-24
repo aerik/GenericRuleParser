@@ -11,14 +11,19 @@ This parses string rules in the form of FIELDNAME OPERATOR 'VALUE' [CONJUNCTION 
 Some simple examples are
 
   x = '1'
+  
   foo equals 'bar' AND baz greaterthan '0'
 
 The parser also supports grouping rules with parentheses, so that you could also do
 
   x = '1' OR (Foo equals 'bar' AND baz greaterthan '0')
+  
 or
+
   (x = '1' OR Foo equals 'bar') AND baz greaterthan '0'
+  
 or
+
   (x = '1') OR (Foo equals 'bar' AND (baz greaterthan '0'))
 
 The parser DOES NOT support any form of precedence, so trying 
