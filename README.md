@@ -30,4 +30,6 @@ The parser DOES NOT support any form of precedence, so trying
 
   x = '1' OR Foo equals 'bar' AND baz greaterthan '0'
 
-throws and exception due to mismatched conjuctions
+throws and exception due to mismatched conjuctions, but you can chain together long rules using the same conjuction
+
+  x = '1' OR y > '2' OR Foo equals 'bar' OR baz greaterthan '0'
