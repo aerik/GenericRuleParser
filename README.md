@@ -3,10 +3,11 @@ A parser for simple rules in C#
 
 This parses string rules in the form of FIELDNAME OPERATOR 'VALUE' [CONJUNCTION FIELDNAME_n OPERATOR_n 'VALUE_n'] where:
 
-* The space characters (the space character, ASCII 32) is the delimter between parts of the rule(s)
-* FIELNAME and OPERATOR contain no spaces
+* The space character (ASCII 32) is the delimter between parts of the rule(s)
+* FIELDNAME and OPERATOR contain no spaces
 * VALUE is always contained by single quotes and contains no single quotes - but it may contain spaces
 * CONJUNCTION is either AND or OR
+* This hasn't been tested with non-ASCII text
 
 Some simple examples are
 
